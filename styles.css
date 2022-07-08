@@ -23,7 +23,7 @@ a:hover {
 
 /* Section Styles */
 
-.main-nav {
+.header-nav {
   width: 100%;
   background: black;
   min-height: 30px;
@@ -60,7 +60,7 @@ a:hover {
 
 header {
   text-align: center;
-  background:  url("https://placeimg.com/1000/500/arch") no-repeat top center ;
+  background:  url('images/skyline.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -68,7 +68,7 @@ header {
 
 .exp {
   text-align: center;
-  background:  url("https://placeimg.com/1000/500/nature") no-repeat top center ;
+  background:  url("images/skyline.jpg") no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
@@ -81,7 +81,7 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #ff99ff;
   transition: all .5s;
 }
 header .profile-image:hover {
@@ -92,7 +92,7 @@ header .profile-image:hover {
   width: 75px;
   height: 75px;
   border-radius: 50%;
-  border: 3px solid white;
+  border: 3px solid #ff99ff;
   transition: all .5s;
 }
 .profile-image:hover {
@@ -116,7 +116,8 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.card {
+.home-card,
+.exp-card {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -129,7 +130,8 @@ header .profile-image:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.card:hover {
+.home-card:hover,
+.exp-card:hover {
   border-color: #ff99ff;
 }
 
