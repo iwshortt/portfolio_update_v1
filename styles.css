@@ -39,7 +39,6 @@ a:hover {
   margin: 0 auto;
   padding: 0;
 }
-
 .nav .name {
     display: block;
     margin-right: auto;
@@ -55,24 +54,29 @@ a:hover {
   color: white
 }
 
-/* this comment identifies the comment below as the links to my bg img */
-/* "https://placeimg.com/1000/500/arch" url('images/portland.jpg') "https://placeimg.com/1000/500/nature" */ 
-
-header {
+.header-home {
   text-align: center;
   background:  url('images/skyline.jpg') no-repeat top center;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
-
-.exp {
+.header-experience {
   text-align: center;
   background:  url("images/skyline.jpg") no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
+.header-hobbies {
+  text-align: center;
+  background:  url("images/skyline.jpg") no-repeat top center ;
+  background-size: cover;
+  overflow: hidden;
+  padding-top: 60px;
+}
+
 header {
   line-height: 1.5;
 }
@@ -96,14 +100,35 @@ header .profile-image:hover {
   transition: all .5s;
 }
 .profile-image:hover {
-  transform: scale(2.4) rotate(5deg);
+  transform: scale(2.2) rotate(5deg);
 }
+.experience,
 .hobbies {
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 50px;
+  border: solid #f7f5f0 8px;
+  border-radius: 25px;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 10px;
 }
+
+.work {
+  border: solid #f7f5f0 8px;
+  border-radius: 25px;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 10px;
+  margin-top: 0px;
+}
+.work-sub {
+  border: solid #f7f5f0 8px;
+  border-radius: 25px;
+  padding: 0px 20px 0px 20px;
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -116,8 +141,9 @@ header .profile-image:hover {
   background-color: #222;
   color: yellow;
 }
-.home-card,
-.exp-card {
+.card-home,
+.card-experience,
+.card-hobbies {
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -130,8 +156,9 @@ header .profile-image:hover {
   flex-direction: column;
   justify-content: space-between;
 }
-.home-card:hover,
-.exp-card:hover {
+.card-home:hover,
+.card-experience:hover,
+.card-hobbies {
   border-color: #ff99ff;
 }
 
@@ -240,4 +267,8 @@ a.social:hover {
 
 h2 {
   text-align: center;
+}
+
+.ppp {
+  border: solid #f7f5f0 8px;
 }
